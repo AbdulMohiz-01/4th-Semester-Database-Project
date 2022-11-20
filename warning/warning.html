@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="style.css">
+   <title>Document</title>
+</head>
+<body>
+      
+<div class="buttons">
+   <h1>Notifications</h1>
+   <button onclick="notifySuccess()">
+     Success
+   </button>
+   <button onclick="notifyError()">
+     Error
+   </button>
+   <button onclick="notifyInfo()">
+     Info
+   </button>
+ </div>
+ 
+ <div id="notification-area">
+ </div>
+ <script>
+   function notify(type,message){
+  (()=>{
+    let n = document.createElement("div");
+    let id = Math.random().toString(36).substr(2,10);
+    n.setAttribute("id",id);
+    n.classList.add("notification",type);
+    n.innerText = message;
+    document.getElementById("notification-area").appendChild(n);
+    setTimeout(()=>{
+      var notifications = document.getElementById("notification-area").getElementsByClassName("notification");
+      for(let i=0;i<notifications.length;i++){
+        if(notifications[i].getAttribute("id") == id){
+          notifications[i].remove();
+          break;
+        }
+      }
+    },5000);
+  })();
+}
+
+function notifySuccess(){
+  notify("success","This is demo success notification message");
+}
+function notifyError(){
+  notify("error","This is demo error notification message");
+}
+function notifyInfo(){
+  notify("info","This is demo info notification message");
+}
+ </script>
+
+</body>
+</html>

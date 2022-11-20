@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Men's | ZR Wears</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&family=Quicksand:wght@300&family=Titillium+Web:wght@900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/mens.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"
+          ><img src="/assests/logo/logo.png" alt="logo"
+        /></a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link active sizeOfText shift"
+                aria-current="page"
+                href="index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active sizeOfText" aria-current="page" href="/templates/womens.html"
+                >Women's</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active sizeOfText" aria-current="page" href="/templates/mens.html"
+                >Men's</a
+              >
+            </li>
+          </ul>
+          <form class="svgs">
+            <!-- <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"> -->
+            <div class="dropdown">
+              <button class="dropbtn">
+                <img
+                  class="mx-1 my-1 svg25"
+                  src="/assests/SVG's/profilePic.svg"
+                  alt="Profile icon"
+                  srcset=""
+                />
+              </button>
+              <div class="dropdown-content">
+                <form action="">
+                  <div class="form-floating mb-3">
+                    <input
+                      type="email"
+                      class="form-control emailandPassTextField"
+                      id="floatingInput"
+                      autocomplete="off"
+                      placeholder="name@example.com"
+                    />
+                    <label for="floatingInput">Email address</label>
+                  </div>
+                  <div class="form-floating">
+                    <input
+                      type="password"
+                      class="form-control emailandPassTextField pass"
+                      id="floatingPassword"
+                      placeholder="Password"
+                    />
+                    <label for="floatingPassword">Password</label>
+                  </div>
+                  <div class="buttonFashion">
+                    <button type="button" class="btn btn-outline-success">
+                      Login
+                    </button>
+                  </div>
+                </form>
+                <div class="buttonFashion">
+                  <a class="btn btn-outline-success" href="#">Register</a>
+                </div>
+              </div>
+            </div>
+            <img
+              class="mx-1 my-1 svg27"
+              src="/assests/SVG's/favourite.svg"
+              alt="favourite icon"
+              srcset=""
+            />
+            <a href="/templates/cart.html"
+              ><img
+                class="mx-1 my-1 svg25"
+                src="/assests/SVG's/cart.svg"
+                alt="cart icon"
+                srcset=""
+            /></a>
+            <div class="cartNumber" id="cartNumber">
+              <p class="cartCounting" id="cartCounting" name="cartCounting">
+                0
+              </p>
+            </div>
+            <img
+              class="my-1 svg27"
+              src="/assests/SVG's/AboutUs.svg"
+              alt="About us icon"
+              srcset=""
+            />
+          </form>
+        </div>
+      </div>
+    </nav>
+
+
+    <!-- Flixkity carousal -->
+
+    <div class="videoBox">
+      <video autoplay loop src="/assests/sliderPics/mens/menshoesVideo.mp4"></video>
+    </div>
+
+      
+    <!-- Flixkity carousal ended -->
+
+    <div class="boxes">
+    <div class="container" style="background-color: white;">
+        <!-- start of row -->
+        <div class="row">
+            <!-- start of column -->
+            <div class="col-lg image-box mx-4 my-4">
+              <img class="images img-responsive" src="/assests/Shoes Pictures/1.jpeg" alt="Shoes Image">
+              <div class="contText"> 
+                <p class="textStyleInImgContainer">PUMA</p>
+                <p class="textStyleInImgContainer" style="color: silver; font-weight: 300;">Men's Shoes</p>
+                <p class="textStyleInImgContainer">6999 PKR</p>
+                <h6 class="size textStyleInImgContainer">
+                  Size :
+                  <span class="textStyleInImgContainer">45</span>
+                  <span class="textStyleInImgContainer">46</span>
+                  <span class="textStyleInImgContainer">47</span>
+                  <span class="textStyleInImgContainer">48</span>
+                </h6>
+                <button class="pluseButton close" id="pluseButton" style="border: none;">+</button>
+              </div>
+            </div>
+             <!-- end of column -->
+             <!-- start of column -->
+            <div class="col-lg image-box mx-4 my-4">
+              <img class="images img-responsive" src="/assests/Shoes Pictures/10.jpeg" alt="Shoes Image">
+              <div class="contText"> 
+                <p class="textStyleInImgContainer">PUMA</p>
+                <p class="textStyleInImgContainer" style="color: silver; font-weight: 300;">Men's Shoes</p>
+                <p class="textStyleInImgContainer">6999 PKR</p>
+                <h6 class="size textStyleInImgContainer">
+                  Size :
+                  <span class="textStyleInImgContainer">45</span>
+                  <span class="textStyleInImgContainer">46</span>
+                  <span class="textStyleInImgContainer">47</span>
+                  <span class="textStyleInImgContainer">48</span>
+                </h6>
+                <a class="pluseButton" href="#">+</a>
+              </div>
+            </div>
+             <!-- end of column -->
+             <!-- start of column -->
+            <div class="col-lg image-box mx-4 my-4">
+              <img class="images img-responsive" src="/assests/Shoes Pictures/3.jpeg" alt="Shoes Image">
+              <div class="contText"> 
+                <p class="textStyleInImgContainer">PUMA</p>
+                <p class="textStyleInImgContainer" style="color: silver; font-weight: 300;">Men's Shoes</p>
+                <p class="textStyleInImgContainer">6999 PKR</p>
+                <h6 class="size textStyleInImgContainer">
+                  Size :
+                  <span class="textStyleInImgContainer">45</span>
+                  <span class="textStyleInImgContainer">46</span>
+                  <span class="textStyleInImgContainer">47</span>
+                  <span class="textStyleInImgContainer">48</span>
+                </h6>
+                <a class="pluseButton" href="#">+</a>
+              </div>
+            </div>
+             <!-- end of column -->
+          </div> 
+          <!-- end of row -->
+           <!-- start of row -->
+        <div class="row">
+            <!-- start of column -->
+            <div class="col-lg image-box mx-4 my-4">
+              <img class="images img-responsive" src="/assests/Shoes Pictures/1.jpeg" alt="Shoes Image">
+              <div class="contText"> 
+                <p class="textStyleInImgContainer">PUMA</p>
+                <p class="textStyleInImgContainer" style="color: silver; font-weight: 300;">Men's Shoes</p>
+                <p class="textStyleInImgContainer">6999 PKR</p>
+                <h6 class="size textStyleInImgContainer">
+                  Size :
+                  <span class="textStyleInImgContainer">45</span>
+                  <span class="textStyleInImgContainer">46</span>
+                  <span class="textStyleInImgContainer">47</span>
+                  <span class="textStyleInImgContainer">48</span>
+                </h6>
+                <button class="pluseButton close" id="pluseButton" style="border: none;">+</button>
+              </div>
+            </div>
+             <!-- end of column -->
+             <!-- start of column -->
+            <div class="col-lg image-box mx-4 my-4">
+              <img class="images img-responsive" src="/assests/Shoes Pictures/10.jpeg" alt="Shoes Image">
+              <div class="contText"> 
+                <p class="textStyleInImgContainer">PUMA</p>
+                <p class="textStyleInImgContainer" style="color: silver; font-weight: 300;">Men's Shoes</p>
+                <p class="textStyleInImgContainer">6999 PKR</p>
+                <h6 class="size textStyleInImgContainer">
+                  Size :
+                  <span class="textStyleInImgContainer">45</span>
+                  <span class="textStyleInImgContainer">46</span>
+                  <span class="textStyleInImgContainer">47</span>
+                  <span class="textStyleInImgContainer">48</span>
+                </h6>
+                <a class="pluseButton" href="#">+</a>
+              </div>
+            </div>
+             <!-- end of column -->
+             <!-- start of column -->
+            <div class="col-lg image-box mx-4 my-4">
+              <img class="images img-responsive" src="/assests/Shoes Pictures/3.jpeg" alt="Shoes Image">
+              <div class="contText"> 
+                <p class="textStyleInImgContainer">PUMA</p>
+                <p class="textStyleInImgContainer" style="color: silver; font-weight: 300;">Men's Shoes</p>
+                <p class="textStyleInImgContainer">6999 PKR</p>
+                <h6 class="size textStyleInImgContainer">
+                  Size :
+                  <span class="textStyleInImgContainer">45</span>
+                  <span class="textStyleInImgContainer">46</span>
+                  <span class="textStyleInImgContainer">47</span>
+                  <span class="textStyleInImgContainer">48</span>
+                </h6>
+                <a class="pluseButton" href="#">+</a>
+              </div>
+            </div>
+             <!-- end of column -->
+          </div> 
+          <!-- end of row -->
+           <!-- start of row -->
+        <div class="row">
+            <!-- start of column -->
+            <div class="col-lg image-box mx-4 my-4">
+              <img class="images img-responsive" src="/assests/Shoes Pictures/1.jpeg" alt="Shoes Image">
+              <div class="contText"> 
+                <p class="textStyleInImgContainer">PUMA</p>
+                <p class="textStyleInImgContainer" style="color: silver; font-weight: 300;">Men's Shoes</p>
+                <p class="textStyleInImgContainer">6999 PKR</p>
+                <h6 class="size textStyleInImgContainer">
+                  Size :
+                  <span class="textStyleInImgContainer">45</span>
+                  <span class="textStyleInImgContainer">46</span>
+                  <span class="textStyleInImgContainer">47</span>
+                  <span class="textStyleInImgContainer">48</span>
+                </h6>
+                <button class="pluseButton close" id="pluseButton" style="border: none;">+</button>
+              </div>
+            </div>
+             <!-- end of column -->
+             <!-- start of column -->
+            <div class="col-lg image-box mx-4 my-4">
+              <img class="images img-responsive" src="/assests/Shoes Pictures/10.jpeg" alt="Shoes Image">
+              <div class="contText"> 
+                <p class="textStyleInImgContainer">PUMA</p>
+                <p class="textStyleInImgContainer" style="color: silver; font-weight: 300;">Men's Shoes</p>
+                <p class="textStyleInImgContainer">6999 PKR</p>
+                <h6 class="size textStyleInImgContainer">
+                  Size :
+                  <span class="textStyleInImgContainer">45</span>
+                  <span class="textStyleInImgContainer">46</span>
+                  <span class="textStyleInImgContainer">47</span>
+                  <span class="textStyleInImgContainer">48</span>
+                </h6>
+                <a class="pluseButton" href="#">+</a>
+              </div>
+            </div>
+             <!-- end of column -->
+             <!-- start of column -->
+            <div class="col-lg image-box mx-4 my-4">
+              <img class="images img-responsive" src="/assests/Shoes Pictures/3.jpeg" alt="Shoes Image">
+              <div class="contText"> 
+                <p class="textStyleInImgContainer">PUMA</p>
+                <p class="textStyleInImgContainer" style="color: silver; font-weight: 300;">Men's Shoes</p>
+                <p class="textStyleInImgContainer">6999 PKR</p>
+                <h6 class="size textStyleInImgContainer">
+                  Size :
+                  <span class="textStyleInImgContainer">45</span>
+                  <span class="textStyleInImgContainer">46</span>
+                  <span class="textStyleInImgContainer">47</span>
+                  <span class="textStyleInImgContainer">48</span>
+                </h6>
+                <a class="pluseButton" href="#">+</a>
+              </div>
+            </div>
+             <!-- end of column -->
+          </div> 
+          <!-- end of row -->
+           <!-- start of row -->
+        <div class="row">
+            <!-- start of column -->
+            <div class="col-lg image-box mx-4 my-4">
+              <img class="images img-responsive" src="/assests/Shoes Pictures/1.jpeg" alt="Shoes Image">
+              <div class="contText"> 
+                <p class="textStyleInImgContainer">PUMA</p>
+                <p class="textStyleInImgContainer" style="color: silver; font-weight: 300;">Men's Shoes</p>
+                <p class="textStyleInImgContainer">6999 PKR</p>
+                <h6 class="size textStyleInImgContainer">
+                  Size :
+                  <span class="textStyleInImgContainer">45</span>
+                  <span class="textStyleInImgContainer">46</span>
+                  <span class="textStyleInImgContainer">47</span>
+                  <span class="textStyleInImgContainer">48</span>
+                </h6>
+                <button class="pluseButton close" id="pluseButton" style="border: none;">+</button>
+              </div>
+            </div>
+             <!-- end of column -->
+             <!-- start of column -->
+            <div class="col-lg image-box mx-4 my-4">
+              <img class="images img-responsive" src="/assests/Shoes Pictures/10.jpeg" alt="Shoes Image">
+              <div class="contText"> 
+                <p class="textStyleInImgContainer">PUMA</p>
+                <p class="textStyleInImgContainer" style="color: silver; font-weight: 300;">Men's Shoes</p>
+                <p class="textStyleInImgContainer">6999 PKR</p>
+                <h6 class="size textStyleInImgContainer">
+                  Size :
+                  <span class="textStyleInImgContainer">45</span>
+                  <span class="textStyleInImgContainer">46</span>
+                  <span class="textStyleInImgContainer">47</span>
+                  <span class="textStyleInImgContainer">48</span>
+                </h6>
+                <a class="pluseButton" href="#">+</a>
+              </div>
+            </div>
+             <!-- end of column -->
+             <!-- start of column -->
+            <div class="col-lg image-box mx-4 my-4">
+              <img class="images img-responsive" src="/assests/Shoes Pictures/3.jpeg" alt="Shoes Image">
+              <div class="contText"> 
+                <p class="textStyleInImgContainer">PUMA</p>
+                <p class="textStyleInImgContainer" style="color: silver; font-weight: 300;">Men's Shoes</p>
+                <p class="textStyleInImgContainer">6999 PKR</p>
+                <h6 class="size textStyleInImgContainer">
+                  Size :
+                  <span class="textStyleInImgContainer">45</span>
+                  <span class="textStyleInImgContainer">46</span>
+                  <span class="textStyleInImgContainer">47</span>
+                  <span class="textStyleInImgContainer">48</span>
+                </h6>
+                <a class="pluseButton" href="#">+</a>
+              </div>
+            </div>
+             <!-- end of column -->
+          </div> 
+          <!-- end of row -->
+           <!-- start of row -->
+        <div class="row">
+            <!-- start of column -->
+            <div class="col-lg image-box mx-4 my-4">
+              <img class="images img-responsive" src="/assests/Shoes Pictures/1.jpeg" alt="Shoes Image">
+              <div class="contText"> 
+                <p class="textStyleInImgContainer">PUMA</p>
+                <p class="textStyleInImgContainer" style="color: silver; font-weight: 300;">Men's Shoes</p>
+                <p class="textStyleInImgContainer">6999 PKR</p>
+                <h6 class="size textStyleInImgContainer">
+                  Size :
+                  <span class="textStyleInImgContainer">45</span>
+                  <span class="textStyleInImgContainer">46</span>
+                  <span class="textStyleInImgContainer">47</span>
+                  <span class="textStyleInImgContainer">48</span>
+                </h6>
+                <button class="pluseButton close" id="pluseButton" style="border: none;">+</button>
+              </div>
+            </div>
+             <!-- end of column -->
+             <!-- start of column -->
+            <div class="col-lg image-box mx-4 my-4">
+              <img class="images img-responsive" src="/assests/Shoes Pictures/10.jpeg" alt="Shoes Image">
+              <div class="contText"> 
+                <p class="textStyleInImgContainer">PUMA</p>
+                <p class="textStyleInImgContainer" style="color: silver; font-weight: 300;">Men's Shoes</p>
+                <p class="textStyleInImgContainer">6999 PKR</p>
+                <h6 class="size textStyleInImgContainer">
+                  Size :
+                  <span class="textStyleInImgContainer">45</span>
+                  <span class="textStyleInImgContainer">46</span>
+                  <span class="textStyleInImgContainer">47</span>
+                  <span class="textStyleInImgContainer">48</span>
+                </h6>
+                <a class="pluseButton" href="#">+</a>
+              </div>
+            </div>
+             <!-- end of column -->
+             <!-- start of column -->
+            <div class="col-lg image-box mx-4 my-4">
+              <img class="images img-responsive" src="/assests/Shoes Pictures/3.jpeg" alt="Shoes Image">
+              <div class="contText"> 
+                <p class="textStyleInImgContainer">PUMA</p>
+                <p class="textStyleInImgContainer" style="color: silver; font-weight: 300;">Men's Shoes</p>
+                <p class="textStyleInImgContainer">6999 PKR</p>
+                <h6 class="size textStyleInImgContainer">
+                  Size :
+                  <span class="textStyleInImgContainer">45</span>
+                  <span class="textStyleInImgContainer">46</span>
+                  <span class="textStyleInImgContainer">47</span>
+                  <span class="textStyleInImgContainer">48</span>
+                </h6>
+                <a class="pluseButton" href="#">+</a>
+              </div>
+            </div>
+             <!-- end of column -->
+          </div> 
+          <!-- end of row -->
+      </div>
+    </div>
+    <footer class="text-center text-lg-start bg-dark text-white">
+      <!-- Section: Social media -->
+      <section
+        class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom"
+      >
+        <!-- Left -->
+        <div class="me-5 d-none d-lg-block">
+          <span>Get connected with us on social networks:</span>
+        </div>
+        <!-- Left -->
+        <a target="_blank" href="https://www.instagram.com/zed__r_/"
+          ><img
+            src="/assests/SVG's/instagram svg.svg"
+            width="32px"
+            height="32px"
+            alt=""
+        /></a>
+        <!-- Right -->
+        <div>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-google"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
+        <!-- Right -->
+      </section>
+      <!-- Section: Social media -->
+
+      <!-- Section: Links  -->
+      <section class="">
+        <div class="container text-center text-md-start mt-5">
+          <!-- Grid row -->
+          <div class="row mt-3">
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+              <!-- Content -->
+              <h6 class="text-uppercase fw-bold mb-4">
+                <i class="fas fa-gem me-3"></i>ZR Wears
+              </h6>
+              <p>
+                We are a new brand currently based in Abbottabad, Pakistan.
+                Dealing in imported footwear. We have variety of occasional,
+                formal, semi-formal as well as casual shoes, slippers, sandals,
+                etc. Quality of our products is top-notch, these items are hand
+                picked hence minimizing errors and chances of damaged or quality
+                compromized good. We want to grow as a brand so building trust,
+                a good image, and maintaining loyalty are our primary goals.
+              </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">Products</h6>
+              <p>
+                <a href="#!" class="text-reset">Men's Shoes</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Women's Shoes</a>
+              </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-md-0 mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+              <p><i class="fas fa-home me-3"></i>Abbottabad Main Bazar</p>
+              <p>
+                <i class="fas fa-envelope me-3"></i>
+                mohiza208@gmail.com
+              </p>
+              <p><i class="fas fa-phone me-3"></i>+92 312 5643442</p>
+              <p><i class="fas fa-print me-3"></i>+92 318 5526776</p>
+            </div>
+            <!-- Grid column -->
+          </div>
+          <!-- Grid row -->
+        </div>
+      </section>
+      <!-- Section: Links  -->
+
+      <!-- Copyright -->
+
+      <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+    <!-- notification js -->
+    <script>
+      function increaseCartNumber() {
+        let number = document.getElementById("cartCounting").textContent;
+        let num2 = Number(number);
+        num2 = num2 + 1;
+        if (num2 > 0) {
+          let num3 = document.getElementById("cartNumber");
+          num3.style.opacity = "1";
+        }
+        if (num2 >= 10) {
+          let num = document.getElementById("cartCounting");
+          num.style.right = "3px";
+        }
+        document.getElementById("cartCounting").textContent = num2;
+      }
+      function notify(type, message) {
+        (() => {
+          let n = document.createElement("div");
+          let id = Math.random().toString(36).substr(2, 10);
+          n.setAttribute("id", id);
+          n.classList.add("notification", type);
+          n.innerText = message;
+          document.getElementById("notification-area").appendChild(n);
+          setTimeout(() => {
+            var notifications = document
+              .getElementById("notification-area")
+              .getElementsByClassName("notification");
+            for (let i = 0; i < notifications.length; i++) {
+              if (notifications[i].getAttribute("id") == id) {
+                notifications[i].remove();
+                break;
+              }
+            }
+          }, 5000);
+        })();
+      }
+      function notifySuccess() {
+        notify("success", "Added To Cart!");
+      }
+    </script>
+    <!-- notification js ended-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

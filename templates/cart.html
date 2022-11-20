@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart | ZR Wears</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Quicksand:wght@300&family=Titillium+Web:wght@900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/cart.css">
+    
+</head>
+<body>
+      <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++ ADD TO CART SECTION -->
+      <section class="h-100 h-custom" style="background-color: #d2c9ff;">
+        <div class="container py-5 h-100">
+          <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col-12">
+              <div class="card card-registration card-registration-2" style="border-radius: 15px;">
+                <div class="card-body p-0">
+                  <div class="row g-0">
+                    <div class="col-lg-8">
+                      <div class="p-5">
+                        <div class="d-flex justify-content-between align-items-center mb-5">
+                          <h1 class="fw-bold mb-0 text-black">Shopping Cart</h1>
+                          <h6 class="mb-0 text-muted">3 items</h6>
+                        </div>
+                        <hr class="my-4">
+                        <!-- ITEM 01 -->
+                        <div class="row mb-4 d-flex justify-content-between align-items-center">
+                          <div class="col-md-2 col-lg-2 col-xl-2">
+                            <img
+                              src="/assests/Shoes Pictures/WhatsApp Image 2022-06-16 at 7.23.13 PM (1).jpeg"
+                              class="img-fluid rounded-3" alt="Cotton T-shirt">
+                          </div>
+                          <!-- category -->
+                          <div class="col-md-3 col-lg-3 col-xl-3">
+                            <h6 class="text-muted">Men's Shoes</h6>
+                            <h6 class="text-black mb-0">Nike</h6>
+                          </div>
+                          <!-- minus buttons -->
+                          <div class="col-md-3 col-lg-3 col-xl-2 d-flex">
+                            <button class="myBtn-minus"
+                              onclick="this.parentNode.querySelector('input[type=number]').stepDown(),stepDownPrice()">-
+                            </button>
+                            <!-- quantity -->
+                            <input id="form1" min="0" name="quantity" value="1" type="number"
+                              class="quantityBox form-control form-control-sm" />
+                            <!-- plus button -->
+                            <button class="myBtn-minus" id="itemStepUpPrice"
+                              onclick="this.parentNode.querySelector('input[type=number]').stepUp(),stepUpPrice()">+
+                            </button>
+                          </div>
+                          <!-- price -->
+                          <div class="col-md-3 col-lg-2 col-xl-2 offset-lg-1">
+                            <h6 class="mb-0">PKR <p id="itemTotalPrice">6999</p></h6>
+                          </div>
+                          <!-- cross button -->
+                          <div class="col-md-1 col-lg-1 col-xl-1 text-end">
+                            <a href="#!" class="text-muted-close"><img src="/assests/SVG's/close.svg" width="20px" height="20px" alt=""></a>
+                          </div>
+                        </div>
+                        <!-- ITEM 01 ENDED -->
+                        <hr class="my-4">
+                        <!-- ITEM 02 -->
+                        <div class="row mb-4 d-flex justify-content-between align-items-center">
+                          <div class="col-md-2 col-lg-2 col-xl-2">
+                            <img
+                              src="/assests/Shoes Pictures/WhatsApp Image 2022-06-16 at 7.23.13 PM (1).jpeg"
+                              class="img-fluid rounded-3" alt="Cotton T-shirt">
+                          </div>
+                          <!-- category -->
+                          <div class="col-md-3 col-lg-3 col-xl-3">
+                            <h6 class="text-muted">Men's Shoes</h6>
+                            <h6 class="text-black mb-0">Nike</h6>
+                          </div>
+                          <!-- minus buttons -->
+                          <div class="col-md-3 col-lg-3 col-xl-2 d-flex">
+                            <button class="myBtn-minus"
+                              onclick="this.parentNode.querySelector('input[type=number]').stepDown()">-
+                            </button>
+                            <!-- quantity -->
+                            <input id="form1" min="0" name="quantity" value="1" type="number"
+                              class="quantityBox form-control form-control-sm" />
+                            <!-- plus button -->
+                            <button class="myBtn-minus"
+                              onclick="this.parentNode.querySelector('input[type=number]').stepUp()">+
+                            </button>
+                          </div>
+                          <!-- price -->
+                          <div class="col-md-3 col-lg-2 col-xl-2 offset-lg-1">
+                            <h6 class="mb-0">PKR 6999</h6>
+                          </div>
+                          <!-- cross button -->
+                          <div class="col-md-1 col-lg-1 col-xl-1 text-end">
+                            <a href="#!" class="text-muted-close"><img src="/assests/SVG's/close.svg" width="20px" height="20px" alt=""></a>
+                          </div>
+                        </div>
+                         <!-- ITEM 02 ENDED -->
+                        <hr class="my-4">
+                        <!-- ITEM 03 -->
+                        <div class="row mb-4 d-flex justify-content-between align-items-center">
+                          <div class="col-md-2 col-lg-2 col-xl-2">
+                            <img
+                              src="/assests/Shoes Pictures/WhatsApp Image 2022-06-16 at 7.23.13 PM (1).jpeg"
+                              class="img-fluid rounded-3" alt="Cotton T-shirt">
+                          </div>
+                          <!-- category -->
+                          <div class="col-md-3 col-lg-3 col-xl-3">
+                            <h6 class="text-muted">Men's Shoes</h6>
+                            <h6 class="text-black mb-0">Nike</h6>
+                          </div>
+                          <!-- minus buttons -->
+                          <div class="col-md-3 col-lg-3 col-xl-2 d-flex">
+                            <button class="myBtn-minus"
+                              onclick="this.parentNode.querySelector('input[type=number]').stepDown()">-
+                            </button>
+                            <!-- quantity -->
+                            <input id="form1" min="0" name="quantity" value="1" type="number"
+                              class="quantityBox form-control form-control-sm" />
+                            <!-- plus button -->
+                            <button class="myBtn-minus"
+                              onclick="this.parentNode.querySelector('input[type=number]').stepUp()">+
+                            </button>
+                          </div>
+                          <!-- price -->
+                          <div class="col-md-3 col-lg-2 col-xl-2 offset-lg-1">
+                            <h6 class="mb-0">PKR 6999</h6>
+                          </div>
+                          <!-- cross button -->
+                          <div class="col-md-1 col-lg-1 col-xl-1 text-end">
+                            <a href="#!" class="text-muted-close"><img src="/assests/SVG's/close.svg" width="20px" height="20px" alt=""></a>
+                          </div>
+                        </div>
+                         <!-- ITEM 03 ENDED -->
+                        <hr class="my-4">
+      
+                        <div class="pt-5">
+                          <h6 class="mb-0"><a href="/templates/index.html" class="text-body"><img class="backArrow" src="/assests/SVG's/left-arrow-angle-svgrepo-com.svg" width="14px" height="14px" alt=""> Back to shop</a></h6>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 bg-grey">
+                      <div class="p-5">
+                        <h3 class="summary">Summary</h3>
+                        <hr class="my-4">
+      
+                        <div class="d-flex justify-content-between mb-4">
+                          <h5 class="summaryText">items 3</h5>
+                          <h5>PKR 20000</h5>
+                        </div>
+      
+                        <h5 class="summaryText mb-3">Shipping</h5>
+      
+                        <div class="mb-4 shippingoption pb-2">
+                          <select class="select">
+                            <option value="1">Standard-Delivery- PKR 150</option>
+                            <option value="2">Fast-Delivery- PKR 350</option>
+                          </select>
+                        </div>
+      
+                        <div class="form-floating mb-3">
+                          <input type="text" class="form-control emailandPassTextField" id="floatingInput" placeholder="name@example.com">
+                          <label for="floatingInput" class="summaryText">Address</label>
+                        </div>
+      
+                        <hr class="my-4">
+      
+                        <div class="d-flex justify-content-between mb-5">
+                          <h5 class="summaryText">Total price</h5>
+                          <h5>PKR 20350</h5>
+                        </div>
+      
+                        <button type="button" class="btn btn-dark btn-block btn-lg"
+                          data-mdb-ripple-color="dark">Go to Checkout</button>
+      
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++ ADD TO CART SECTION End -->
+
+      
+
+    <script>
+      function stepUpPrice(){
+        let multiple = document.getElementById('form1').value;
+        itemPrice = 6999 * multiple;
+        let update = String(itemPrice)
+        document.getElementById('itemTotalPrice').textContent = itemPrice;
+      }
+      function stepDownPrice(){
+        let multiple = document.getElementById('form1').value;
+        if(multiple > 0){
+        let itemPrice = Number(document.getElementById('itemTotalPrice').innerHTML);
+        itemPrice = itemPrice - 6999;
+        document.getElementById('itemTotalPrice').textContent = itemPrice;
+        }
+      }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</body>
+</html>
